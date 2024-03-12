@@ -47,7 +47,8 @@ img {
 }
 
 .motoboys-list li {
-    width: calc(13% - 20px);
+    /* mobile */
+    width: 100%;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -55,6 +56,20 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    .motoboys-list li {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+    .motoboys-list li {
+        width: calc(25% - 20px);
+    }
 }
 
 .motoboys-list li:hover {
